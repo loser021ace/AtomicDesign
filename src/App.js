@@ -5,12 +5,22 @@ import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/userCard";
 
 export default function App() {
+  const user = {
+    img: "https://source.unsplash.com/brFsZ7qszSY",
+    name: "うんちまん",
+    mail: "dosukoi@gmail.com",
+    tel: "090-1111-2222",
+    company: {
+      name: "うんち会社"
+    },
+    WEB: "http//google.com"
+  };
   return (
     <>
       <PrimaryButton>test</PrimaryButton>
       <SeconderyButton>test3</SeconderyButton>
       <SearchInput />
-      <UserCard />
+      <UserCard user={user} />
     </>
   );
 }
