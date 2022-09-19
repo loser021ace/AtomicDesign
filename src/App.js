@@ -3,6 +3,7 @@ import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SeconderyButton } from "./components/atoms/button/SeconderyButton";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/userCard";
+import { HeaderOnly } from "./components/templates/HeaderOnly";
 
 export default function App() {
   const user = {
@@ -16,11 +17,11 @@ export default function App() {
     WEB: "http//google.com"
   };
   return (
-    <>
+    <HeaderOnly>
       <PrimaryButton>test</PrimaryButton>
       <SeconderyButton>test3</SeconderyButton>
       <SearchInput />
       <UserCard user={user} />
-    </>
+    </HeaderOnly>
   );
 }
