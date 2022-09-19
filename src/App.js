@@ -1,10 +1,16 @@
 import "./styles.css";
+import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
+import { SeconderyButton } from "./components/atoms/button/SeconderyButton";
+import { SearchInput } from "./components/molecules/SearchInput";
+import { UserCard } from "./components/organisms/user/userCard";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <>
+      <PrimaryButton>test</PrimaryButton>
+      <SeconderyButton>test3</SeconderyButton>
+      <SearchInput />
+      <UserCard />
+    </>
   );
 }
